@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - Popcorn@localhost" uuid="d43053f7-18a3-4ed3-8b14-51711fcaa5e5">
+    <database-info product="MySQL" version="5.7.14" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="Popcorn">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="abc"/>
+      <schema id="3" name="AccidentTracker"/>
+      <schema id="4" name="information_schema"/>
+      <schema id="5" name="Insurance"/>
+      <schema id="6" name="LMS"/>
+      <schema id="7" name="mysql"/>
+      <schema id="8" name="PAWS"/>
+      <schema id="9" name="performance_schema"/>
+      <schema id="10" name="sys"/>
+      <schema id="11" name="tasker_dev"/>
+      <schema id="12" name="tasker_test"/>
+      <table id="13" parent="1" name="studios"/>
+      <column id="14" parent="13" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="15" parent="13" name="version">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="16" parent="13" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(45)|0</data-type>
+      </column>
+      <column id="17" parent="13" name="est">
+        <data-type>date|0</data-type>
+      </column>
+      <column id="18" parent="13" name="created_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="19" parent="13" name="updated_at">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <key id="20" parent="13" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
